@@ -14,6 +14,9 @@ body {
   line-height: calc(26 / 16);
   color: var(--gray-200);
   background-color: black;
+
+  /* width: 1440px;
+  height: 2000px; */
 }
 
 a {
@@ -27,7 +30,7 @@ li {
 
 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 
 button {
@@ -37,6 +40,8 @@ button {
   font: inherit;
   border: none;
   cursor: pointer;
+
+  text-transform: capitalize;
 }
 
 h1,
