@@ -1,0 +1,79 @@
+/* ***************** */
+/* RESET CSS */
+/* ***************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(26 / 16);
+  color: var(--gray-200);
+  background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  display: inline-block;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-2);
+  color: var(--white);
+}
+
+input {
+  display: inline-block;
+  font: inherit;
+}
+
+/* ***************** */
+/* REUSABLE ELEMENTS */
+/* ***************** */
+.heading-primary {
+  font-size: 66px;
+  font-weight: 700;
+  line-height: calc(76 / 66);
+  text-transform: capitalize;
+}
+
+.heading-secondary {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: calc(58 / 48);
+  text-transform: capitalize;
+}
+
+.subheading-secondary {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--green);
+}
