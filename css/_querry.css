@@ -1,0 +1,44 @@
+@media (max-width: 500px) {
+  /* LAYOUT */
+  .grid--2-cols,
+  .grid--3-cols {
+    --grid-col: 1;
+  }
+
+  .heading-primary {
+    font-size: 44px;
+  }
+  /* BUTTON */
+  .btn {
+    width: 100%;
+  }
+
+  /* HEADER */
+  .navbar {
+    margin: 0;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: initial;
+  }
+
+  /* HERO */
+  .hero-img-container {
+    grid-row: 2 / 3;
+  }
+
+  .hero-form {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 34px;
+  }
+
+  .hero-form-select-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

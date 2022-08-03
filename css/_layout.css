@@ -1,18 +1,16 @@
 .container {
   --container-padding: 18px;
   max-width: calc(1170px + var(--container-padding) * 2);
-  max-width: 1206px;
   padding: 0 var(--container-padding);
   margin: 0 auto;
-  /* background-color: red; */
 }
 
 .grid {
   --grid-col: 1;
   display: grid;
   grid-template-columns: repeat(var(--grid-col), 1fr);
-  gap: 30px;
   align-items: center;
+  gap: 30px;
 }
 
 .grid--2-cols {

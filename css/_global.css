@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Sora:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Sora:wght@600;700&display=swap");
 
 :root {
   /* color */
@@ -18,7 +18,7 @@
 
   --bg-color: #2c2e32;
 
-  /* border radius*/
+  /* border radius */
   --border-radius-sm: 8px;
   --border-radius-md: 14px;
   --border-radius-lg: 20px;

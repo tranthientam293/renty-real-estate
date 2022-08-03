@@ -30,7 +30,7 @@ li {
 
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
 
 button {
@@ -57,6 +57,7 @@ h6 {
 input {
   display: inline-block;
   font: inherit;
+  width: 100%;
 }
 
 /* ***************** */
@@ -81,4 +82,11 @@ input {
   font-weight: 500;
   line-height: 1;
   color: var(--green);
+}
+
+.heading-3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 14px;
 }

@@ -1,0 +1,9 @@
+/* ***************** */
+/* BUTTON */
+/* ***************** */
+.btn {
+  color: var(--white);
+  background-color: var(--green);
+  padding: 14px 30px;
+  border-radius: var(--border-radius-sm);
+}
