@@ -2,8 +2,171 @@
 /* BUTTON */
 /* ***************** */
 .btn {
+  --padding-inline: 30px;
+  --pading-block: 14px;
+
+  --btn-boder-radius: var(--border-radius-sm);
+
+  --btn-color: var(--white);
+  --btn-bg-color: var(--green);
+
+  color: var(--btn-color);
+  padding: var(--pading-block) var(--padding-inline);
+
+  border-radius: var(--btn-boder-radius);
+
+  background-color: var(--btn-bg-color);
+}
+
+.btn-outline {
+  --btn-color: var(--green);
+  --btn-bg-color: transparent;
+
+  --padding-inline: 32px;
+  --pading-block: 19px;
+
+  --btn-outline-color: var(--btn-color);
+  --btn-border-radius: var(--border-radius-md);
+  font-weight: 500;
+  border: 1px solid var(--btn-outline-color);
+}
+
+.btn-outline:hover {
+  --btn-color: var(--white);
+  --btn-bg-color: var(--green);
+  --btn-outline-color: var(--btn-bg-color);
+}
+
+/* ***************** */
+/* CARD */
+/* ***************** */
+
+.card {
+  border-radius: var(--border-radius-md);
+  background-color: var(--black-300);
+  overflow: hidden;
+}
+.card-body {
+  padding: 19px 26px 24px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 17px;
+}
+
+.card-features {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+
+  margin-bottom: 23px;
+}
+
+.card-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-feature > img {
+  width: 14px;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price {
+  font-size: 20;
+  line-height: 1;
+  color: var(--white);
+}
+/* .card {
+  border-radius: 14px;
+  background-color: var(--black-300);
+}
+.card-img {
+  border-radius: 14px 14px 0 0;
+}
+
+.card-body {
+  padding: 19px 26px 24px;
+}
+
+.card-title,
+.card-disciption,
+.card-text,
+.card-control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
+.card-title {
+  font-size: 14px;
+  line-height: 1;
+
+  margin-bottom: 19px;
+}
+
+.card-title-icon {
+  color: var(--green);
+  font: 18px;
+}
+
+.card-disciption {
+  gap: 29px;
+  margin-bottom: 23px;
+}
+.card-icon-box {
+  display: flex;
+  gap: 8px;
+}
+
+.card-text-icon {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.card-text {
+  gap: 8px;
+
+  font-size: 14px;
+  line-height: 1;
+}
+.card-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-btn {
+  line-height: 1;
+
+  color: var(--green);
+  background-color: transparent;
+
+  border: 1px solid var(--green);
+  text-transform: capitalize;
+
+  padding: 19px 30px;
+  border-radius: var(--border-radius-md);
+}
+
+.card-btn:hover {
   color: var(--white);
   background-color: var(--green);
-  padding: 14px 30px;
-  border-radius: var(--border-radius-sm);
 }
+
+.feature-price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+
+  color: var(--white);
+} */

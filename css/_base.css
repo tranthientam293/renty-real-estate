@@ -1,7 +1,9 @@
 /* ***************** */
 /* RESET CSS */
 /* ***************** */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,14 +11,18 @@
 
 body {
   font-family: var(--ff-1);
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: calc(26 / 16);
-  color: var(--gray-200);
-  background-color: black;
 
-  /* width: 1440px;
-  height: 2000px; */
+  color: var(--gray-200);
+  background-color: var(--black-300);
+}
+
+section:not(:last-child) {
+  --section-spacing: 100px;
+
+  margin-bottom: var(--section-spacing);
 }
 
 a {
@@ -31,17 +37,25 @@ li {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 button {
   display: inline-block;
-  background-color: transparent;
-  color: inherit;
   font: inherit;
+  color: inherit;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+}
 
-  text-transform: capitalize;
+input {
+  display: inline-block;
+  font: inherit;
+}
+
+ion-icon {
+  display: block;
 }
 
 h1,
@@ -54,27 +68,23 @@ h6 {
   color: var(--white);
 }
 
-input {
-  display: inline-block;
-  font: inherit;
-  width: 100%;
-}
-
 /* ***************** */
 /* REUSABLE ELEMENTS */
 /* ***************** */
 .heading-primary {
-  font-size: 66px;
+  font-size: clamp(44px, calc(36px + 2.1vw), 66px);
   font-weight: 700;
   line-height: calc(76 / 66);
   text-transform: capitalize;
 }
 
 .heading-secondary {
-  font-size: 48px;
-  font-weight: 500;
+  font-size: clamp(36px, calc(33px + 0.75vw), 48px);
+  font-weight: 600;
   line-height: calc(58 / 48);
   text-transform: capitalize;
+
+  margin-bottom: 18px;
 }
 
 .subheading-secondary {
@@ -82,11 +92,33 @@ input {
   font-weight: 500;
   line-height: 1;
   color: var(--green);
+
+  text-transform: capitalize;
+
+  margin-bottom: 16px;
 }
 
-.heading-3 {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1;
-  padding-bottom: 14px;
+.img-box {
+  --img-border-radius: var(--border-radius-md);
+  --box-spacing: 20px;
+
+  position: relative;
+}
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  top: calc((-1) * var(--box-spacing));
+  left: calc((-1) * var(--box-spacing));
+  z-index: -1;
+
+  width: calc(100% + var(--box-spacing) * 2);
+  height: calc(100% + var(--box-spacing) * 2);
+
+  background-color: #353536;
+  border-radius: calc(var(--box-spacing) + var(--img-border-radius));
+}
+
+.img-box > img {
+  border-radius: var(--img-border-radius);
 }
