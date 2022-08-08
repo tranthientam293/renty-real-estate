@@ -201,3 +201,102 @@
 .features-link:hover {
   color: var(--white);
 } */
+
+/* SERVICES */
+/* .heading-box {
+  margin-bottom: 20px;
+}
+.heading-text {
+  margin-bottom: 40px;
+}
+
+.achivement {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 34px;
+  
+  width: 70%;
+}
+
+.achivement > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.achivement-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white);
+}
+
+.achivement-item > span {
+  color: var(--blue);
+} */
+
+.service-feature-list.grid--2-cols {
+  --grid-col: 2;
+}
+
+.service-text-wrapper {
+  width: 470px;
+  margin-left: auto;
+}
+
+.service-text-box {
+  margin-bottom: 40px;
+}
+
+.service-text-box > .heading-secondary {
+  margin-bottom: 20px;
+}
+
+.service-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: var(--white);
+}
+
+/* WHY CHOOSE US */
+.wcu {
+  /* background-color: var(--black-200); */
+  padding-block: 60px;
+}
+.wcu-heading-box {
+  max-width: 470px;
+}
+.wcu-heading-text {
+  margin-bottom: 42px;
+}
+.benefits-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: var(--white);
+
+  margin-bottom: 32px;
+}
+
+.benefits-item-icon {
+  width: 22px;
+  height: 22px;
+}
+.wcu {
+  --img-border-radius-tl: 50%;
+}
+
+.wcu-img-box::after {
+  border-top-left-radius: var(--img-border-radius-tl);
+}
+.wcu-img-box > img {
+  border-top-left-radius: var(--img-border-radius-tl);
+}

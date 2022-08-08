@@ -120,5 +120,7 @@ h6 {
 }
 
 .img-box > img {
+  /* position: relative;
+  z-index: 2; */
   border-radius: var(--img-border-radius);
 }
