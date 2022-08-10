@@ -505,16 +505,20 @@
   flex-direction: column;
   gap: 20px;
 
+  line-height: 1;
+
   margin: 8px 0 0;
 }
 
-.grid-item {
-}
 .footer-connect {
   width: 80%;
   justify-self: end;
 }
 
+.footer-connect p {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
 .footer-input-form {
   display: flex;
   flex-direction: column;
@@ -528,10 +532,15 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--black-100);
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
   padding-block: 13px;
 
   margin-bottom: 22px;
 }
+
 .footer-brand-box {
   display: flex;
   align-items: center;
@@ -548,11 +557,17 @@
 .footer-text {
   width: 60%;
   margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1;
 }
 
 .footer-copyright {
   padding: 43px 0 54px;
   border-top: 1px solid var(--black-100);
+
+  font-size: 14px;
+  line-height: 1;
 }
 
 .term-flex {
@@ -560,4 +575,9 @@
   justify-content: end;
   align-items: center;
   gap: 30px;
+}
+
+.draft {
+  stroke: black;
+  /* fill: black; */
 }

@@ -76,6 +76,29 @@
   .d-explore-link {
     display: none;
   }
+
+  /* ***************** */
+  /* FOOTER */
+  /* ***************** */
+  .footer-grid {
+    gap: 58px;
+  }
+  .footer-connect {
+    width: 100%;
+  }
+
+  .footer-text {
+    width: 100%;
+  }
+
+  .footer-input-form button {
+    width: 100%;
+  }
+
+  .term-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 /* .container.grid.grid--2-cols {
     gap: 35px;
@@ -111,24 +134,5 @@
 
   .faq-heading-box .heading-text {
     max-width: 100%;
-  }
-
-  /* ***************** */
-  /* FOOTER */
-  /* ***************** */
-  .footer-grid {
-    gap: 58px;
-  }
-  .footer-connect {
-    width: 100%;
-  }
-
-  .footer-text {
-    width: 100%;
-  }
-
-  .term-flex {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
