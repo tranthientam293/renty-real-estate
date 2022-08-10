@@ -170,3 +170,75 @@
 
   color: var(--white);
 } */
+
+/* ***************** */
+/* ACCORDION */
+/* ***************** */
+
+.accordion {
+  /* padding: 0px 100px 56px; */
+  max-width: 970px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  margin: 0 auto;
+}
+
+.accordion-item {
+  --acd-padding-inline: 56px;
+  --acd-padding-block: 24px;
+  --acd-gap: 20px;
+
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--green);
+  padding: var(--acd-padding-block) var(--acd-padding-inline);
+}
+
+.accoridon-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--acd-gap);
+}
+
+.accordion-title {
+  font-size: 24px;
+  line-height: calc(38 / 24);
+  text-transform: capitalize;
+
+  font-size: clamp(18px, calc(0.56vw - 9.9px), 24px);
+}
+
+.accoridon-title-box ion-icon {
+  color: var(--white);
+  font-size: 26px;
+}
+
+.accordion-collapse-btn {
+  display: none;
+}
+
+.accordion-text {
+  display: none;
+
+  max-width: 66%;
+  color: var(--gray-100);
+
+  font-size: clamp(12px, calc(0.375vw - 10.6px), 16px);
+}
+
+.active {
+  background-color: var(--green);
+}
+.active .accordion-text {
+  display: block;
+}
+
+.active .accordion-expand-btn {
+  display: none;
+}
+
+.active .accordion-collapse-btn {
+  display: block;
+}
