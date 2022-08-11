@@ -51,6 +51,8 @@ button {
 
 input {
   display: inline-block;
+  border: none;
+
   font: inherit;
 }
 

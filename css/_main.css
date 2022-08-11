@@ -466,11 +466,12 @@
 /* ***************** */
 
 .faq-heading-box {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 119px;
 }
 
 .faq-heading-box .heading-text {
+  /* display:inline-block; */
   max-width: calc(800% / 12);
   margin: 20px auto 0;
 }
@@ -511,7 +512,7 @@
 }
 
 .footer-connect {
-  width: 80%;
+  max-width: 80%;
   justify-self: end;
 }
 
@@ -530,7 +531,7 @@
 .footer-input-form input {
   width: 100%;
   background-color: transparent;
-  border: none;
+ 
   border-bottom: 1px solid var(--black-100);
 
   font-size: 14px;
@@ -539,6 +540,8 @@
   padding-block: 13px;
 
   margin-bottom: 22px;
+
+  outline: none;
 }
 
 .footer-brand-box {
