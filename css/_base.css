@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  transition: all 0.3s;
 }
 
 body {
@@ -17,11 +19,12 @@ body {
 
   color: var(--gray-200);
   background-color: var(--black-300);
+
+  overflow-x: hidden;
 }
 
-section:not(:last-child) {
+section {
   --section-spacing: 100px;
-
   margin-bottom: var(--section-spacing);
 }
 
@@ -40,20 +43,18 @@ img {
   height: auto;
 }
 
-button {
+button,
+input {
   display: inline-block;
   font: inherit;
   color: inherit;
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  outline: none;
 }
 
-input {
-  display: inline-block;
-  border: none;
-
-  font: inherit;
+button {
+  cursor: pointer;
 }
 
 ion-icon {
@@ -81,12 +82,10 @@ h6 {
 }
 
 .heading-secondary {
-  font-size: clamp(36px, calc(33px + 0.75vw), 48px);
+  font-size: 48px;
   font-weight: 600;
   line-height: calc(58 / 48);
   text-transform: capitalize;
-
-  margin-bottom: 18px;
 }
 
 .subheading-secondary {
@@ -94,16 +93,12 @@ h6 {
   font-weight: 500;
   line-height: 1;
   color: var(--green);
-
-  text-transform: capitalize;
-
   margin-bottom: 16px;
 }
 
 .img-box {
-  --img-border-radius: var(--border-radius-md);
   --box-spacing: 20px;
-
+  --img-border-radius: var(--border-radius-md);
   position: relative;
 }
 
@@ -122,7 +117,25 @@ h6 {
 }
 
 .img-box > img {
-  /* position: relative;
-  z-index: 2; */
   border-radius: var(--img-border-radius);
+}
+
+.underline {
+  --underline-margin-bottom: 35px;
+  --underline-height: 1px;
+  --underline-width: 100%;
+  position: relative;
+  margin-bottom: var(--underline-margin-bottom);
+}
+
+.underline::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: var(--underline-width);
+  border-bottom: var(--underline-height) solid var(--green);
 }
