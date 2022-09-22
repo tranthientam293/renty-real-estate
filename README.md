@@ -1,2 +1,2 @@
-# real-estate-landing-page
- Real estate landing page
+# Renty real estate landing page
+ https://realestate-landing-page.netlify.app/
