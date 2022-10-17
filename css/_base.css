@@ -97,28 +97,12 @@ h6 {
 }
 
 .img-box {
-  --box-spacing: 20px;
-  --img-border-radius: var(--border-radius-md);
-  position: relative;
+  outline: 20px solid #353536;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+
 }
 
-.img-box::after {
-  content: "";
-  position: absolute;
-  top: calc((-1) * var(--box-spacing));
-  left: calc((-1) * var(--box-spacing));
-  z-index: -1;
-
-  width: calc(100% + var(--box-spacing) * 2);
-  height: calc(100% + var(--box-spacing) * 2);
-
-  background-color: #353536;
-  border-radius: calc(var(--box-spacing) + var(--img-border-radius));
-}
-
-.img-box > img {
-  border-radius: var(--img-border-radius);
-}
 
 .underline {
   --underline-margin-bottom: 35px;

@@ -229,6 +229,10 @@
   display: none;
 }
 
+.d-explore-link:hover {
+  color: var(--white);
+}
+
 .feature-intersect-bg {
   position: absolute;
   left: 0;
@@ -364,16 +368,9 @@
 }
 
 .wcu-img-box {
-  --border-radius-top-left: 50%;
+  border-top-left-radius: 50%;
 }
 
-.wcu-img-box::after {
-  border-top-left-radius: var(--border-radius-top-left);
-}
-
-.wcu-img-box > img {
-  border-top-left-radius: var(--border-radius-top-left);
-}
 
 /* ***************** */
 /* BLOG */

@@ -51,6 +51,13 @@
   .hero-img-container {
     grid-row: 2 / 3;
     margin-bottom: calc(68px - var(--row-gap));
+    width: 100%;
+
+  }
+
+  .hero-img-box {
+    position: relative;
+    max-width: 100%;
   }
 
   .hero-text-container {
@@ -100,6 +107,10 @@
     grid-row: 1;
   }
 
+  .service-text-wrapper,
+  .wcu-text-wrapper {
+    max-width: 100%;
+  }
   /* ***************** */
   /* FOOTER */
   /* ***************** */

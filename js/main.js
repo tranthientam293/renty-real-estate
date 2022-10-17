@@ -1,4 +1,4 @@
-const accordionItems = document.querySelectorAll(".accordion-item");
+const accordionItems = document.querySelectorAll(".accordion-icon");
 const accordionBtns = document.querySelectorAll(".accordion-button");
 
 
@@ -25,5 +25,6 @@ for (const item of accordionBtns) {
       reset();
       show(event.target.closest(".accordion-item"));
     }
+    
   });
 }

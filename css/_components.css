@@ -194,7 +194,7 @@
   padding: var(--accordion-padding-block) var(--accordion-padding-inline);
 }
 
-.accordion-item.active {
+.accordion-item:hover {
   background-color: var(--green);
 }
 
@@ -220,7 +220,7 @@
   --ionicon-stroke-width: 50px;
 }
 
-.accordion-item.active .accordion-icon {
+.accordion-item:hover .accordion-icon {
   transform: rotate(45deg);
 }
 
@@ -236,7 +236,7 @@
   line-height: calc(24 / 14);
 }
 
-.accordion-item.active .accordion-collapse {
+.accordion-item:hover .accordion-collapse {
   height: 100px;
   opacity: 1;
 }
